@@ -5,6 +5,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="space.css">
+<style>
+    .content main {
+        display: block;
+    }
+    
+    @media (max-width: 600px) {
+    form {
+        display: grid;
+        width: 100%;
+        grid-gap: 1em;
+        grid-template-rows: auto;
+        grid-template-columns: 6em 1fr;
+    }
+
+    input[submit] {
+        grid-row: auto;
+        grid-column: 2 / 3;
+        width: 9em;
+    }
+    }
+</style>
 </head>
 <body class="content">
     <div id="wrapper">
