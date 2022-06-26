@@ -4,9 +4,25 @@
 <title>Space!</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .iframe-container {
+        overflow: hidden;
+        /* 16:9 aspect ratio */
+        padding-top: 56.25%;
+        position: relative;
+    }
+
+    .iframe-container iframe {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+</style>
 <link rel="stylesheet" href="space.css">
 </head>
-<body class="content">
+<body>
     <div id="wrapper">
         <Header>
             <h1><a href="index.html">Manned Spaceflight History</a></h1>
@@ -25,9 +41,11 @@
     <div id="astronaut"></div>
     <main>
         <h2>10 Amazing Rocket Launch Videos!</h2>
-        <iframe src="https://www.youtube.com/embed/k-QdTpIp5m0" width="640" height="385">
+        <div class="iframe-container">
+        <iframe src="https://www.youtube.com/embed/k-QdTpIp5m0" loading="lazy" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             <a href="https://www.youtube.com/embed/k-QdTpIp5m0">Youtube Video</a>
         </iframe>
+        </div>
     </main>
     <footer><small><i>Copyright &copy; 2022 James Pollock<br><a href="mailto:james.a.pollock1@gmail.com">james.a.pollock1@gmail.com</a></i></small></footer>
 </div>
